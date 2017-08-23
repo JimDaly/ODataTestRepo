@@ -1,0 +1,48 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.CheckPromoteEmail1(Edm.String,Edm.String,Edm.Int32)
+type: function
+metadata: 
+  title: "RetrieveByGroupResource Function| MicrosoftDocs"
+  ms.date: "2017-07-10"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+    - "Dynamics 365 (online)"
+  ms.assetid: d3fa5c75-6c87-4038-8127-70c30bc9f3c0
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+namespace: Microsoft.Dynamics.CRM
+description: "The account entitytype has no functions or actions bound to it."
+parameters:
+- name: MessageId
+  type: Edm.String
+  nullable: false
+  unicode: false
+  description: "he message ID that is contained in the email header."
+- name: Subject
+  type: Edm.String
+  nullable: true
+  unicode: false
+  description: "The subject of the message."
+- name: DirectionCode
+  type: Edm.Int32
+  nullable: true
+  unicode: false
+  description: "The direction of a mail checked for promotion for uniqueness."
+return_type:
+  description: "Contains the response from CheckPromoteEmail function."
+  nullable: false
+  type: Microsoft.Dynamics.CRM.CheckPromoteEmailResponse
+reference_groups:
+- groupname: "Entities"
+  description: "Use the CheckPromoteEmail function with this entity type:"
+  reference_items:
+  - Microsoft.Dynamics.CRM.email
+bound_entities:
+- bindingtype: entity
+  entitytype: Microsoft.Dynamics.CRM.calendar
+see_also:
+- "[Use the Microsoft Dynamics CRM Web API](../../use-microsoft-dynamics-365-web-api.md)"
+- "[Web API EntityType Reference](../entitytypereference.md)"
+- "[Web API Action Reference](../actionreference.md)"

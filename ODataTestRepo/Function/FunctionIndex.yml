@@ -1,0 +1,17 @@
+### YamlMime:OData.index
+uid: Microsoft.Dynamics.CRM.FunctionIndex
+metadata: 
+  title: "Web API EntityType Reference| MicrosoftDocs"
+  ms.date: "2017-07-10"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+    - "Dynamics 365 (online)"
+  ms.assetid: ed96bb52-43bc-4b4c-a7e2-f47969238bf5
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+description: "An EntityType represents an entity type in the OData v4 entity model.  "
+in_this_section:
+- Microsoft.Dynamics.CRM.CheckPromoteEmail1(Edm.String,Edm.String,Edm.Int32)
+- Microsoft.Dynamics.CRM.CheckPromoteEmail(Edm.String,Edm.String,Edm.Int32)

@@ -1,0 +1,80 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.Account1
+type: entitytype
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement account EntityType Reference | MicrosoftDocs"
+  ms.date: "2017-07-10"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+    - "Dynamics 365 (online)"
+  ms.assetid: b587728b-db31-4d53-be70-98a1ed5fe7e9
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Web API account entitytype."
+header: 
+  description: "business that represents a customer or potential customer. the company that is billed in business transactions."
+  entity_set_path: "[organization uri]/api/data/v9.0/accounts"
+  base_type: account
+  display_name: account
+  primary_key: accountid
+  primary_name_attribute: name
+  operations_supported: 
+  - post
+  - get
+  - patch
+  - delete
+namespace: Microsoft.Dynamics.CRM
+description: The account entitytype has no functions or actions bound to it.
+property_groups:    
+- groupname: Properties
+  description: "Properties represent fields of data stored in the entity. Some properties are read-only."
+  properties:
+  - name: accountcategorycode
+    type: Microsoft.Dynamics.CRM.Account
+    details: "display name: category  \n  description: select a category to indicate whether the customer account is standard or preferred.  \n  default options:"
+  - name: accountclassificationcode
+    type: Microsoft.Dynamics.CRM.Account
+    details: "display name: classification  \n  description: select a classification code to indicate the potential value of the customer account based on the projected return on investment, cooperation level, sales cycle length or other criteria.  \n  default options:"
+- groupname: "Lookup Properties"
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: Lookup properties and Retrieve data about lookup properties."
+  properties:
+  - name: _createdby_value
+    single_valued_navigation_property: adx_sitemarkerid
+    description: "shows who created the record."
+  - name: _createdbyexternalparty_value
+    description: "shows the external party who created the record."
+- groupname: "Single-valued navigation properties"
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  properties:
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.Account
+    partner: lk_accountbase_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.Account
+    partner: lk_accountbase_createdonbehalfby
+- groupname: "Collection-valued navigation properties"
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  properties:
+  - name: account_actioncard
+    type: Microsoft.Dynamics.CRM.Account
+    partner: regardingobjectid_account_actioncard
+  - name: account_activity_parties
+    type: Microsoft.Dynamics.CRM.Account
+    partner: partyid_account
+reference_groups:
+- groupname: "Operations"
+  description: "The following operations can be used with the account entity type."
+  reference_items:
+  - Microsoft.Dynamics.CRM.GrantAccess 
+  - Microsoft.Dynamics.CRM.Merge
+- groupname: "Solutions"
+  description: "The following solutions include the account entity type."
+  reference_items:
+  - "Dynamics 365 Portals - Portal Base Solution"
+  - "AppCommon Solution"
+see_also:
+- "[Use the Microsoft Dynamics CRM Web API](../../use-microsoft-dynamics-365-web-api.md)"
+- "[Web API EntityType Reference](../entitytypereference.md)"
+- "[Web API Action Reference](../actionreference.md)"

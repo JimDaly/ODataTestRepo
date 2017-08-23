@@ -1,0 +1,37 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.AccessRights1
+type: enumtype
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement account EntityType Reference | MicrosoftDocs"
+  ms.date: "2017-07-10"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+    - "Dynamics 365 (online)"
+  ms.assetid: b587728b-db31-4d53-be70-98a1ed5fe7e9
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Web API account entitytype."
+namespace: Microsoft.Dynamics.CRM
+description: "Contains the possible access rights for a user."
+members:
+- description: "No access."
+  name: None
+  value: 0
+- description: "The right to read the specified type of record."
+  name: ReadAccess
+  value: 1
+- description: "The right to update the specified record."
+  name: WriteAccess
+  value: 2
+reference_groups:
+- groupname: "Used by"
+  description: "The following use the AccessRights enum type."
+  reference_items:
+  - Microsoft.Dynamics.CRM.GrantAccess 
+  - Microsoft.Dynamics.CRM.Merge
+see_also:
+- "[Use the Microsoft Dynamics CRM Web API](../../use-microsoft-dynamics-365-web-api.md)"
+- "[Web API EntityType Reference](../entitytypereference.md)"
+- "[Web API Action Reference](../actionreference.md)"
