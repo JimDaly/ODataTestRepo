@@ -1,0 +1,29 @@
+### YamlMime:TableOfContent
+- uid: Microsoft.Dynamics.CRM.ActionIndex
+  name: Actions
+  items:
+  - uid: Microsoft.Dynamics.CRM.CheckPromoteEmail(Edm.String,Edm.String,Edm.Int32)
+    name: CheckPromoteEmail
+  - uid: Microsoft.Dynamics.CRM.CheckPromoteEmail1(Edm.String,Edm.String,Edm.Int32)
+    name: CheckPromoteEmail1
+- uid: Microsoft.Dynamics.CRM.CocmplexTypeIndex
+  name: CocmplexTypes
+  items:
+  - uid: Microsoft.Dynamics.CRM.AddItemCampaignActivityResponse1
+    name: AddItemCampaignActivityResponse1
+  - uid: Microsoft.Dynamics.CRM.AddItemCampaignActivityResponse
+    name: AddItemCampaignActivityResponse
+- uid: Microsoft.Dynamics.CRM.EntityTypeIndex
+  name: EntityTypes
+  items:
+  - uid: Microsoft.Dynamics.CRM.Account1
+    name: Account1
+  - uid: Microsoft.Dynamics.CRM.Account
+    name: Account
+- uid: Microsoft.Dynamics.CRM.EnumTypeIndex
+  name: EnumTypes
+  items:
+  - uid: Microsoft.Dynamics.CRM.AccessRights1
+    name: AccessRights1
+  - uid: Microsoft.Dynamics.CRM.AccessRights
+    name: AccessRights
